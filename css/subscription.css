@@ -1,0 +1,152 @@
+/*----- Generales -----*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url(../img/bg.jpg) no-repeat center top;
+    background-size: 100vw 100vh;
+    background-color: black;
+  }
+.container {
+    width: 90%;
+    margin: auto;
+}
+..subscription {
+    padding-bottom: 30px;
+}
+.subscription .container .cuadro .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    color: #ffff;
+    background: #8cc653;
+    border-radius: 30px;
+    font-size: 15px;
+    border: 2px solid transparent;
+    transition: all .40s ease;
+    text-align: center;
+    align-items: center;
+}
+.subscription .container .cuadro .btn:hover {
+    border: 2px solid #8cc653;
+    color: #8cc653;
+    background: transparent;
+}
+#menu-icon {
+    color: #fff;
+    font-size: 38px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/*----- Logotype -----*/
+header .logo {
+  margin: 30px 0px;
+}
+header .logo .container {
+  text-align: center;
+  align-items: center;
+}
+header .logo .container img {
+  text-align: center;
+}
+
+/*----- Registro -----*/
+main .subscription .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .subscription .container .cuadro {
+    background: #000;
+    opacity: 0.9;
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+main .subscription .container .cuadro h2 {
+  text-align: center;
+  color: white;
+}
+
+input[type="text"], input[type="password"]{
+  outline: none;
+  padding: 20px;
+  display: block;
+  width: 250px;
+  border-radius: 3px;
+  border: 1px solid #4e4e4e;
+  margin: 20px auto;
+  background: #232323;
+}
+
+input[type="submit"] {
+  outline: none;
+  padding: 20px;
+  display: block;
+  color: #fff;
+  background: #55b255;
+  width: 290px;
+  margin: 20px auto;
+  margin-top: 0;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+}
+input[type="submit"]:hover {
+  background-color: #232323;
+}
+main .subscription .container .cuadro h3 {
+  color: #55b255;
+  text-align: center;
+}
+main .subscription .container .cuadro p {
+color: #737373;
+font-size: 10pt;
+text-align: center;
+margin: 20 0;
+}
+main .subscription .container .cuadro a {
+  text-decoration: none;
+  color: #55b255;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- Footer -----*/
+footer {
+  background: #232323;
+  color: #fff;
+  padding: 5em;
+}
+footer .container {
+  text-align: center;
+}
+footer .container p {
+  font-size: 1em;
+}
+
+
+/*----- Media 768px -----*/
+@media (min-width:768px) {
+  main .subscription .container .cuadro {
+    padding: 50px;
+  }
+
+
+
+}

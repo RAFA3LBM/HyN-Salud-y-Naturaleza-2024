@@ -1,0 +1,76 @@
+/*----- Generales -----*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background: #d8f0da;
+  }
+.container {
+  width: 90%;
+	margin: auto;
+}
+
+/* ---- Portada Radio ----- */
+.cursos-portada {
+	font-size: 16px;
+	min-height: 32em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../../assets/img/podcast/portada-podcast.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3em;
+	display: flex;
+	align-items: center;
+}
+
+.cursos-portada .container {
+	margin: 0 auto;
+    text-align: center;
+	margin-bottom: 3em;
+}
+
+/* ---- Podcast ----- */
+.cursos .container .caja {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cursos .container .caja .box-cursos {
+  width: 100%;
+  margin: 0px 5px;
+    padding: 0;
+}
+.cursos .container .caja .box-cursos h2 {
+    margin-bottom: 0;
+}
+.cursos .container .caja .box-cursos img {
+    width: 100%;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+
+
+/*----- Media 768px -----*/
+@media (min-width:800px) {
+    .cursos-portada .container h1 {
+        font-size: 5em;
+        margin-bottom: 0;
+    }
+    .cursos-portada .container p {
+        font-size: 16pt;
+    }
+    .cursos .container .caja {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cursos .container .caja .box-cursos {
+        width: 320px;
+        margin: 0px 5px;
+    }
+    .cursos .container .caja .box-cursos img {
+        width: 100%; margin-bottom: 0;
+    }
+}

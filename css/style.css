@@ -1,0 +1,213 @@
+/*----- Generales -----*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Ajusta según tus necesidades */
+    margin: 0 auto;
+}
+
+
+/*----- Titulos -----*/
+
+.contenedor .superpuesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2; /* Ajusta según tus necesidades */
+    color: #fff; /* Color del texto */
+    margin-top: 18em;
+    width: 100%;
+}
+
+.contenedor .superpuesto h1 {
+    font-size: 2em;
+    margin: 0;
+}
+.contenedor .superpuesto h3 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.contenedor .superpuesto p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
+.contenedor .superpuesto a {
+    color: #abee73;
+}
+.contenedor .superpuesto a:hover {
+    color: #222;
+}
+
+.mascara {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+    z-index: -1; /* Asegúrate de que la máscara esté por encima del contenido */
+}
+
+
+@media (max-width: 767px) {
+    .superpuesto {
+        margin-top: 27em;
+        font-size: 80%; /* Ajusta según tus necesidades en dispositivos más pequeños */
+    }
+}
+
+/*----- Slider animado -----*/
+
+.slider {
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+    position: relative;
+    z-index: -2;
+}
+
+.slides {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100vh; /* Ancho total = número de diapositivas * 100% */
+    display: flex;
+    animation: slide 30s infinite; /* Duración y repetición del deslizamiento */
+}
+
+.slide {
+    flex: 1;
+    min-width: 100vh;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-100%);
+    }
+    20% {
+        transform: translateX(-200%);
+    }
+    30% {
+        transform: translateX(-300%);
+    }
+    40% {
+        transform: translateX(-400%);
+    }
+    50% {
+        transform: translateX(-500%);
+    }
+    60% {
+        transform: translateX(-600%);
+    }
+    70% {
+        transform: translateX(-700%);
+    }
+    80% {
+        transform: translateX(-800%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- Preview Programas -----*/
+.preview {
+    padding: 5px 0px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+
+    background: url(../img/fondo-verde.jpg) no-repeat center top;
+    background-size: 100% 100%;
+    background-size: cover;
+}
+.preview .contenedor {
+    justify-content: center;
+}
+.preview .contenedor .texto {
+    max-width: 0px 20px;
+}
+.preview .contenedor .texto p {
+    font-size: 10pt;
+}
+.preview .contenedor .texto a {
+    text-decoration: none;
+    color: #fff;
+    border:  2px solid #fff;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+.preview .contenedor .imagen img {  
+    width: 250px;
+}
+
+
+
+
+
+
+
+/*----- Media 720px -----*/
+@media (min-width:768px) {
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+
+    .preview {
+        padding: 30px 0px;
+    }
+    .preview .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .preview .contenedor .imagen img {  
+        width: 390px;
+    }
+    .preview .contenedor .texto h3 {
+        font-size: 20pt;
+    }
+    .preview .contenedor .texto p {
+        font-size: 18pt;
+    }
+}
+
+@media (max-width:275px) {
+}

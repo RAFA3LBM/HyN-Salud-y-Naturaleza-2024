@@ -1,0 +1,71 @@
+/*----- Generales -----*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background: #d8f0da;
+  }
+.container {
+  width: 90%;
+	margin: auto;
+}
+
+/* ---- Portada Radio ----- */
+.podcast-portada {
+	font-size: 16px;
+	min-height: 32em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../../assets/img/podcast/portada-podcast.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3em;
+	display: flex;
+	align-items: center;
+}
+
+.podcast-portada .container {
+	margin: 0 auto;
+  text-align: center;
+	margin-bottom: 3em;
+}
+
+/* ---- Podcast ----- */
+.podcast .container .caja {
+  display: flex;
+  flex-wrap: wrap;
+}
+.podcast .container .caja .box-podcast {
+  width: 170px;
+  margin: 0px 5px;
+}
+.podcast .container .caja .box-podcast img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+/*----- Media 768px -----*/
+@media (min-width:800px) {
+  .podcast-portada .container h1 {
+    font-size: 5em;
+  }
+  .podcast-portada .container p {
+    font-size: 16pt;
+  }
+
+  .podcast .container .caja {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .podcast .container .caja .box-podcast {
+    width: 190px;
+    margin: 0px 5px;
+  }
+  .podcast .container .caja .box-podcast img {
+    width: 100%;
+  }
+
+
+}

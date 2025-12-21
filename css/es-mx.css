@@ -1,0 +1,156 @@
+/*-- Generales --*/
+body {
+    margin: 0;
+    padding: 0;
+  }
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/*----- Estrenos -----*/
+#estrenos {
+  background: url(../img/fondo-verde.jpg) no-repeat;
+  background-size: cover;
+}
+
+#estrenos .container h2 {
+    text-align: center;
+    color: #fff;
+}
+/*----- Programas de TV -----*/
+#ProgramasTV {
+    padding: 30px 0px;
+}
+#ProgramasTV .container .titulo h2 {
+    text-align: center;
+}
+#ProgramasTV .container .box .texto  h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+#ProgramasTV .container .box .capitulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+#ProgramasTV .container .box .capitulos .caratula {
+    width: 190px;
+    padding: 3px;
+}
+
+#ProgramasTV .container .box .capitulos .caratula img {
+    width: 100%;
+}
+#ProgramasTV .container .texto {
+    text-align: center;
+}
+
+
+/*----- Radio Online -----*/
+
+#Radio {
+    padding: 20px;
+    
+}
+.Radio .container {
+    background: url('../img/radio-online/radio-online-wallpaper.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#Radio .container .titulo h2 {
+    text-align: center;
+    color: #fff;
+}
+#Radio .container .titulo p {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+#Radio .container .titulo .boton {
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+
+/*----- Peliculas -----*/
+#peliculas {
+    padding: 10px 0px;
+}
+#peliculas .container .titulo {
+    padding-bottom: 20px;
+}
+#peliculas .container .titulo h2 {
+    text-align: center;
+}
+#peliculas .container .box {
+    display: flex;
+    flex-wrap: wrap;
+}
+#peliculas .container .box .cartel {
+    width: 180px;
+    margin: 5px;
+}
+#peliculas .container .box .cartel img {
+    width: 100%;
+}
+
+
+
+/*----- Sesiones de musica -----*/
+#sesiones .container .titulo {
+    text-align: center;
+    padding-bottom: 10px;
+}
+#sesiones .container .box {
+    display: flex;
+    flex-wrap: wrap;
+}
+#sesiones .container .box .sesion {
+    width: 50%;
+}
+#sesiones .container .box .sesion img {
+    width: 100%;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+/*----- Media 768px -----*/
+@media (min-width:860px) {
+    #ProgramasTV .container .box .capitulos {
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+    #ProgramasTV .container .box .capitulos .caratula {
+        width: 300px;
+    }
+    
+    #peliculas .container .box {
+        display: flex;
+    }
+    
+    #sesiones .container .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #sesiones .container .box .sesion {
+        width: 230px;
+        margin: 0px 5px;
+    }
+}

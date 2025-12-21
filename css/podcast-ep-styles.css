@@ -1,0 +1,162 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #222;
+}
+
+.container {
+    background: #222;
+}
+
+.container .heading {
+    font-size: 3rem;
+    padding: 2rem 0;
+    text-align: center;
+    font-family: sans-serif;
+    text-shadow: 0 .5rem 1rem #000;
+    color: #fff;
+}
+
+.container .music-container {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 70px;
+}
+
+.container .music-container .box {
+    height: 16rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem #000;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.container .music-container .box .image {
+    height: 100%;
+    width: 25%;
+}
+
+.container .music-container .box .image img {
+    height: 100%;
+    width: 100%;
+}
+
+.container .music-container .box .music {
+    width: 75%;
+}
+
+.container .music-container .box .music audio {
+    width: 100%;
+    outline: none;
+}
+
+.container .music-container .box .music audio::-webkit-media-controls-enclosure {
+    background: none;
+}
+
+
+.container .music-container .texto {
+    color: #fff;
+    font-size: 16pt;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/* ---- Botones ----- */
+
+.container .music-container .botones {
+  padding: 10px;
+}
+.container .music-container .botones .container {
+  display: flex;
+  justify-content: center;
+}
+.container .music-container .botones .container .boton {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0 2px;
+    color: #ffff;
+    background: #8cc653;
+    border-radius: 30px;
+    font-size: 15px;
+    border: 2px solid transparent;
+    transition: all .40s ease;
+}
+.container .music-container .botones .container .boton:hover {
+  border: 2px solid #8cc653;
+  color: #8cc653;
+  background: transparent;
+}
+
+
+
+
+.texto-contenido .container {
+    text-align: justify;
+    color: #fff;
+    padding: 20px 0px;
+}
+
+.texto-contenido .container h3 {
+    font-size: 16pt;
+    padding-bottom: 20px;
+}
+.texto-contenido .container p {
+    font-size: 12pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px){
+    .container .music-container .box {
+        padding-top: 100px;
+    }
+    .container .music-container .box {
+        height: 27rem;
+        width: 90%;
+        flex-flow: column;
+    }
+    
+    .container .music-container .box .image {
+        height: 80%;
+        width: 100%;
+    }
+    
+    .container .music-container .box .music {
+        height: 20%;
+        width: 100%;
+    }
+    
+    .texto-contenido {
+        padding: 0px 30px;
+    }
+}
+
+@media (min-width:600px) {
+    .texto-contenido {
+        padding: 0px 100px;
+        text-align: justify;
+    }
+}
+}

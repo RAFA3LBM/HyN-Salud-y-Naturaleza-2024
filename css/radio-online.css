@@ -1,0 +1,105 @@
+/*----- Generales -----*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background: #d8f0da;
+  }
+.container {
+  width: 90%;
+	margin: auto;
+}
+
+/* ---- Portada Radio ----- */
+.radio-portada {
+	font-size: 16px;
+	min-height: 32em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../../assets/img/radio-online/portada-radio.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3em;
+	display: flex;
+	align-items: center;
+}
+
+.radio-portada .container {
+	margin: 0 auto;
+  text-align: center;
+	margin-bottom: 3em;
+}
+
+/* --- Ads- Izquierda --- */
+#radio .container .ads-l img {
+    width: 100%;
+}
+
+/* --- Ads- Derecha --- */
+#radio .container .ads-r img {
+    width: 100%;
+}
+
+/* --- Temas --- */
+#radio .container .temas {
+    text-align: center;
+    color: #fff;
+    background: url(../img/fondo-verde.jpg) no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---- Calendario ----- */
+.calendario .container img {
+  width: 100%;
+}
+
+
+
+/*----- Media 768px -----*/
+@media (min-width:800px) {
+    .radio-portada .container h1 {
+        font-size: 5em;
+    }
+    .radio-portada .container p {
+        font-size: 16pt;
+    }
+    
+    
+    /* --- Radio --- */
+    #radio .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    /* --- Ads- Izquierda --- */
+    #radio .container .ads-l {
+        width: 30%;
+    }
+
+    /* --- Ads- Derecha --- */
+    #radio .container .ads-r {
+        width: 30%;
+    }
+
+    /* --- Temas --- */
+    #radio .container .temas {
+        width: 40%;
+        font-size: 20pt;
+    }
+
+    /* ---- Programas Recientes ----- */
+    .calendario .container img {
+        width: 100%;
+    }
+
+}

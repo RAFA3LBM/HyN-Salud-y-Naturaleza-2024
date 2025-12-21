@@ -1,0 +1,138 @@
+/*----- Generales -----*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background: #fff;
+  }
+.container {
+    width: 90%;
+	margin: auto;
+}
+
+h2 {
+  color: #48ad55;
+}
+
+
+
+/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
+.pelicula-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 90%;
+	margin-bottom: 1.25em;
+}
+
+.programas .titulo .container {
+    border-bottom: 3px solid #48ad55;
+    margin-bottom: 5px;
+}
+
+.programas .contenido .container .carrucel .elemento {
+    width: 100%;
+    padding-bottom: 10px;
+}
+.programas .contenido .container .carrucel .elemento spam {
+    color: #fff;
+    padding: 5px;
+    background: #48ad55;
+    font-size: 8pt;
+    border-radius: 3px;
+}
+.programas .contenido .container .carrucel .elemento .tiempo {
+    color: #333;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.programas .contenido .container .carrucel .elemento img {
+    width: 100%;
+    border-radius: 10px;
+}
+.programas .contenido .container .carrucel .elemento img:hover {
+    box-shadow: 0 0 20px #48ad55;
+}
+.programas .contenido .container .carrucel .elemento h2 {
+    color: #48ad55;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3em;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.programas .contenido .container .carrucel .elemento .tiempo {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.programas .contenido .container .carrucel .elemento p {
+    color: #222;
+    text-align: justify;
+    font-size: 0.9em;
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+
+/*----- Media 800px -----*/
+@media (min-width:800px) {
+    .pelicula-principal {
+      font-size: 14px;
+    }
+
+    .pelicula-principal .descripcion {
+        max-width: 50%;
+    }
+    .programas {
+        padding-bottom: 10px;
+    }
+    .programas .contenido .container .carrucel {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .programas .contenido .container .carrucel .elemento {
+        width: 290px;
+        margin-right: 3px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+    }
+    .programas .contenido .container .carrucel .elemento h2 {
+        font-size: 1.2em;
+    }
+    .programas .contenido .container .carrucel .elemento p {
+        font-size: 0.7em;
+        padding-right: 10px;
+    }
+}
