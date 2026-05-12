@@ -1,2 +1,2 @@
 # HyN-prototype-web-php-2024
-First version of a video streaming platform website built with PHP in 2024, showcasing my first steps with this language.
+Primera versión de una plataforma de transmisión de video web creada con PHP en 2024, que muestra mis primeros pasos con este lenguaje.
